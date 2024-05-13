@@ -1,16 +1,16 @@
 public class Usuario {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
     
-        int Numero = Integer.valueOf(args[0]);
-        String Agencia = args[1];
-        String NomeCliente = args[2];
-        String SobreNomeCliente = args[3];
-        float Saldo = Float.valueOf(args[4]);
+        String nomeCliente = args[0];
+        String sobreNomeCliente = args[1];
+        int numero = Integer.valueOf(args[2]);
+        String agencia = args[3];
+        double saldo = Double.valueOf(args[4]);
 
-    System.out.println("Olá, Sr. "+ NomeCliente+ " " + SobreNomeCliente);
-    System.out.println("A sua agência é a: " + Agencia);
-    System.out.println("De número de conta: " + Numero);
-    System.out.println("O seu saldo atual é de: " + Saldo);
+    System.out.println("Olá, Sr. "+ nomeCliente+ " " + sobreNomeCliente);
+    System.out.println("A sua agência é a: " + agencia);
+    System.out.println("De número de conta: " + numero);
+    System.out.println("O seu saldo atual é de: " + saldo);
 
 
     }
