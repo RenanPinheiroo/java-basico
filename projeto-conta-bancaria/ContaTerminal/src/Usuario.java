@@ -21,7 +21,7 @@ public class Usuario {
 
         double saldo = 237.48;
 
-
+        scanner.close();
 
     System.out.println("Olá, Sr. "+ nomeCliente + " " + sobreNomeCliente + " . Você possui um saldo de" + saldo +  " na conta " + numero + "de Agência " + agencia);
 
