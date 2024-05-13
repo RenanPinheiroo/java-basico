@@ -4,8 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-        
+        {
+            "type": "java",
+            "name": "ContaTermial",
+            "request": "launch",
+            "mainClass": "ContaTermial",
+            "projectName": "ContaTerminal_e0cc202f"
+        },
         {
             "type": "java",
             "name": "Current File",
@@ -17,23 +22,13 @@
             "name": "ContaTerminal",
             "request": "launch",
             "mainClass": "ContaTerminal",
-            "projectName": "ContaTerminal_e0cc202f"
-        },
-
-        {
-            "type": "java",
-            "name": "Usuario",
-            "request": "launch",
-            "mainClass": "Usuario",
-            "args" : [
+            "args": [
                 "Mario",
                 "Andrade",
                 "1021",
                 "067-8",
                 "237.48"
-
             ]
-
         }
     ]
 }
