@@ -1,17 +1,16 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-
 public class ContaTermial {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Qual é o seu nome?");
-        String nomeCliente = scanner.next();
+        String nomeCliente = scanner.nextLine();
 
         System.out.println("Qual é o seu sobrenome?");
-        String sobreNomeCliente = scanner.next();
+        String sobreNomeCliente = scanner.nextLine();
 
         System.out.println("Qual é o número de sua conta?");
         int numero = scanner.nextInt();
