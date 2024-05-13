@@ -1,16 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+
 public class Usuario {
     public static void main(String[] args) {
-    
-        String nomeCliente = args[0];
-        String sobreNomeCliente = args[1];
-        int numero = Integer.valueOf(args[2]);
-        String agencia = args[3];
-        double saldo = Double.valueOf(args[4]);
 
-    System.out.println("Olá, Sr. "+ nomeCliente+ " " + sobreNomeCliente);
-    System.out.println("A sua agência é a: " + agencia);
-    System.out.println("De número de conta: " + numero);
-    System.out.println("O seu saldo atual é de: " + saldo);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        System.out.println("Qual é o seu nome?");
+        String nomeCliente = scanner.next();
+
+        System.out.println("Qual é o seu sobrenome?");
+        String sobreNomeCliente = scanner.next();
+
+        System.out.println("Qual é o número de sua conta?");
+        int numero = scanner.nextInt();
+
+        System.out.println("Qual é a sua Agência?");
+        String agencia = scanner.next();
+
+        double saldo = 237.48;
+
+
+
+    System.out.println("Olá, Sr. "+ nomeCliente + " " + sobreNomeCliente + " . Você possui um saldo de" + saldo +  " na conta " + numero + "de Agência " + agencia);
 
 
     }
