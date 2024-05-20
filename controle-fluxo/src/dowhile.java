@@ -12,7 +12,7 @@ public class dowhile {
 		System.out.println("Alo !!!");
     	}
 	private static boolean tocando() {
-		boolean atendeu = new Random().nextInt(3)==1;
+		boolean atendeu = new Random().nextInt(2)==1;
 		System.out.println("Atendeu? " + atendeu);
 		//negando o ato de continuar tocando
 		return ! atendeu;
