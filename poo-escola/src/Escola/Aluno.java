@@ -3,7 +3,7 @@ package Escola;
 public class Aluno {
 	private String nome;
 	private int idade;
-	
+
 	public String getNome() {
 		return nome;
 	}
