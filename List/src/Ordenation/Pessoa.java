@@ -1,4 +1,7 @@
 package Ordenation;
+
+import java.util.Comparator;
+
 public class Pessoa implements Comparable<Pessoa> {
     
     private String name;
@@ -13,7 +16,7 @@ public class Pessoa implements Comparable<Pessoa> {
         this.altura = altura;
     }
     public int compareTo(Pessoa p){
-        return 0;
+        return  Intereger.compare(idade, p.getIdade());
     }
 
     public String getName() {
@@ -43,4 +46,17 @@ public class Pessoa implements Comparable<Pessoa> {
     
     
     }
+}
+
+class ComparatorPorAltura implements Comparator<Pessoa>{
+
+    @Override
+    public int compare(Pessoa p1, Pessoa p2) {
+        // TODO Auto-generated method stub
+        return Double.compare(p1.getAltura(), p2.getAltura());
+    }
+
+    
+
+
 }

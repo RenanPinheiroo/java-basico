@@ -1,5 +1,6 @@
 package Ordenation;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class OrdenacaoPessoa {
@@ -16,7 +17,11 @@ public class OrdenacaoPessoa {
 
     }
 
-    public void 
+    public List<Pessoa> ordenarPorIdade(){
+        List<Pessoas> pessoasPorIdade = new ArrayList<>(pessoaList);
+        Collection.sort(pessoasPorIdade);
+        return pessoasPorIdade;
+    }
     
 
 
